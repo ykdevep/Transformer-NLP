@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer for Natural Language Processing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            padding: 1em;
+            background-color: #e0f0ff;
+            border-bottom: 5px solid #1f3a60;
+            margin-bottom: 1em;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .copyright {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .highlight {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1f3a60;
+            background-color: #e0f0ff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 1.5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1em;
+        }
+        .notebooks {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .links {
+            text-align: center;
+        }
+        a {
+            color: #1f3a60;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .chatgpt-animation {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.chatgpt-container {
+  border: 2px solid #1f3a60;
+  border-radius: 10px;
+  background-color: #e0f0ff;
+  padding: 1em;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chatgpt-question,
+.chatgpt-answer {
+  animation: fadeInOut 5s ease-in-out infinite;
+  opacity: 0;
+  margin-bottom: 0.5em;
+}
+
+.chatgpt-answer {
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+        
+.word-swarm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2em;
+  margin-top: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+.word {
+  font-size: 1.5em;
+  color: #1f3a60;
+  opacity: 0.8;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.word:nth-child(odd) {
+  animation-duration: 12s;
+}
+
+.word:nth-child(2n) {
+  animation-duration: 15s;
+}
+
+.word:nth-child(3n) {
+  animation-duration: 9s;
+}
+
+.word:nth-child(4n) {
+  animation-duration: 7s;
+}
+        
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 2em auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.linkedin-post {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em; /* Adjust the value as needed */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Transformers-for-NLP-2nd-Edition</h1>
+    <img src="https://github.com/Denis2054/Transformers-for-NLP-2nd-Edition/blob/main/Transformers_Rothman.png?raw=tru" alt="drawing" width="400"/>
+
+    <p class="copyright">&copy;Copyright 2022, 2023, Denis Rothman, Packt Publishing<br>
+    Last updated on March 24,2023</p>
+
+    <p class="highlight">Under the hood working of transformers, fine-tuning GPT-3 models, DeBERTa, vision models, and the start of Metaverse, using a variety of NLP platforms: Hugging Face, OpenAI API, Trax, and AllenNLP. A BONUS directory containing OpenAI API notebooks with ChatGPT with GPT-3.5-turbo/GPT-4 and image generation with DALL-E.</p>
+    <p class="notebooks">🐬 OpenAI ChatGPT, GPT-4, DALL-E notebooks</p>
+
+    <p class="links">
+    <a href="https://github.com/Denis2054/Transformers-for-NLP-2nd-Edition">The Book GitHub Repository</a><br>    
+    <a href="https://www.linkedin.com/in/denis-rothman-0b034043/">Contact me on LinkedIn</a><br>
+    <a href="https://www.amazon.com/Transformers-Natural-Language-Processing-architectures-dp-1803247339/dp/1803247339/ref=mt_other?_encoding=UTF8&me=&qid=">Get the book on Amazon</a>
+        
+       
+   <div class="chatgpt-animation">
+   <div class="chatgpt-container">
+    <div class="chatgpt-question">
+      <p>Question: What is a transformer in NLP?</p>
+    </div>
+    <div class="chatgpt-answer">
+      <p>Answer: A transformer is a deep learning model architecture used in natural language processing tasks for better performance and efficiency.</p>
+    </div>
+  </div>
+</div>
+<div class="word-swarm">
+  <span class="word">NLP</span>
+  <span class="word">Transformer</span>
+  <span class="word">GPT-3.5-turbo</span>
+  <span class="word">GPT-4</span>
+  <span class="word">DeBERTa</span>
+  <span class="word">Metaverse</span>
+  <span class="word">Hugging Face</span>
+  <span class="word">OpenAI</span>
+  <span class="word">Trax</span>
+  <span class="word">AllenNLP</span>
+  <span class="word">ChatGPT</span>
+  <span class="word">DALL-E</span>
+</div>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0tGQJURQuVg" title="Getting Started with GPT 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="linkedin-post">
+    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7044673277067223040" height="1248" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+</div>
+
+
+</p>
+</body>
+</html>
